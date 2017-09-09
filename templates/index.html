@@ -1,0 +1,59 @@
+{% extends "inventex.html" %}
+{% load static %}
+{% load thumbnails %}
+{% block content %}
+<div class="container">
+    <h1 id="bienvenue">Bienvenue!</h1>
+
+   <h2><img src="{% static 'images/livresavous.jpg' %}" class="books_image"/>Prototype de vente en ligne
+   pour <em>Livres à vous</em></h2>
+
+    <p class="prototype">
+        Ce site est un prototype de vente en ligne pour <em>Livres à vous</em>.
+        J'ai rentré une dizaine d'ouvrages, avec presque
+    toujours une photographie de la couverture. Des livres pourraient s'afficher sur la première page ou seulement
+    ceux qui sont en promotion.</p>
+
+    <h3 class="lettrine_stop">Liste des catégories</h3>
+
+   <p>Cette liste peut servir de menu pour feuilleter la librairie. Elle peut se trouver à gauche sur la
+   première page, ou dans le menu <em>Parcourir la librairie</em>. Dès que vous ajoutez une catégorie celle-ci
+   apparaît automatiquement dans ce menu. Il n'est pas compliqué de créer un arbre avec des sous-catégories.</p>
+
+<ul>
+    {% for cat in categories.all %}
+       {% if cat.book_set.all %}
+          <li><a href="/catalog/listcat/{{cat.nom}}">{{cat.nom}}
+             <span class="badge">{{cat.book_set.all|length}}</span> </a>
+          </li>
+       {% endif %}
+    {% endfor %}
+ </ul>
+
+<h3>Collaboration, travaux</h3>
+
+<p>Pour collaborer j'aime le contact direct, mais il est aussi précieux de garder une trace des travaux,
+    de les commenter, d'estimer le temps que cela prendra. Dans ce but
+le site <a href="https://taiga.io/" target="_blank">taiga.io</a>, gratuit pour les petits projets,
+    propose un tableau des tâches à la <a href="http://www.agiliste.fr/guide-de-demarrage-scrum/"
+    target="_blank">Scrum.</a> C'est très pratique.</p>
+
+<p>J'ai décrit dans <a href="/todo/">Liste des travaux</a> ce que j'ai fait jusqu'à maintenant et comment
+    j'imagine la suite.</p>
+
+    <h3>Contact</h3>
+
+
+    <address>
+      <strong>Olivier Gaillard</strong><br>
+      Hohle Gasse 12 / Au Bourg<br>
+      3095 Spiegel b. Bern / 01190 Chavannes-sur-Reyssouze<br>
+      <span class="glyphicon glyphicon-phone"></span> +41 79 398 17 62 <br>
+      <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:info@metacoherence.ch">
+      metacoherence.ch</span> </a>
+    </address>
+
+
+</div>
+
+{% endblock %}

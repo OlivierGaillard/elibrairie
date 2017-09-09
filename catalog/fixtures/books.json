@@ -1,0 +1,242 @@
+[
+{
+    "model": "catalog.book",
+    "pk": 1,
+    "fields": {
+        "titre": "Courir comme on m\u00e9dite",
+        "auteur": "Sakyong Mipham",
+        "prix": "19.90",
+        "quantite": 1,
+        "description": "La m\u00e9ditation appliqu\u00e9e au running am\u00e9liore nos performances sportives.",
+        "photo": "covers/_D8B0001.jpg",
+        "categories": []
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 2,
+    "fields": {
+        "titre": "Un paradigme",
+        "auteur": "Jean Fran\u00e7ois Billeter",
+        "prix": "6.20",
+        "quantite": 1,
+        "description": "R\u00e9flexion de type ph\u00e9nom\u00e9nologique sur les rapports entre corps et esprit.",
+        "photo": "covers/_D8B0005.jpg",
+        "categories": [
+            7
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 3,
+    "fields": {
+        "titre": "Toujours mieux!",
+        "auteur": "Dr Fr\u00e9d\u00e9ric Fanget",
+        "prix": "10.00",
+        "quantite": 1,
+        "description": "Se d\u00e9passer, faire \"toujours mieux\", le perfectionnisme est un puissant moteur de r\u00e9ussite. Or, parfois, vos exigences de perfection sont tr\u00e8s \u00e9lev\u00e9es [...]. Le risque est que vous n'arriviez plus \u00e0 rien faire du tout. Fr\u00e9d\u00e9ric Fanget vous propose une v\u00e9ritable th\u00e9rapie du perfectionnisme.\r\n\r\nFr\u00e9d\u00e9ric Fanget est m\u00e9decin psychiatre et psychoth\u00e9rapeute. Il enseigne \u00e0 Lyon-I.",
+        "photo": "covers/_D8B0003.jpg",
+        "categories": [
+            5
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 4,
+    "fields": {
+        "titre": "J'ai vu une fleur sauvage, l'herbier de Malicorne",
+        "auteur": "Hubert Reeves",
+        "prix": "18.00",
+        "quantite": 1,
+        "description": "\"Le but de ces pages est de faire conna\u00eetre un des domaines les plus admirables de la nature: celui des fleurs sauvages dans nos campagnes. Des splendeurs \u00e0 port\u00e9e de chacun, mais que l'on peut pi\u00e9tiner toute sa vie sans jamais se pencher pour les admirer. On passe ainsi \u00e0 c\u00f4t\u00e9 de joies, \u00e0 coup s\u00fbr renouvelables chaque ann\u00e9e.\" H.R.",
+        "photo": "covers/_D8B0004.jpg",
+        "categories": [
+            6
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 5,
+    "fields": {
+        "titre": "Oser, Th\u00e9rapie de la confiance en soi",
+        "auteur": "Fr\u00e9d\u00e9ric Fanget",
+        "prix": "1.00",
+        "quantite": 1,
+        "description": "Comment se sentir s\u00fbr de soi? Que faire pour ne plus chercher sans cesse l'approbation des autres? [...] Fr\u00e9d\u00e9ric Fanget s'appuie sur ses ann\u00e9es de pratique de la psychoth\u00e9rapie et propose une v\u00e9ritable th\u00e9rapie de la confiance en soi, [...].",
+        "photo": "covers/_D8B0002.jpg",
+        "categories": [
+            5
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 6,
+    "fields": {
+        "titre": "Les innommables, Shukumei, Tome 1",
+        "auteur": "Yann et Conrad",
+        "prix": "12.00",
+        "quantite": 1,
+        "description": "Une DB au second degr\u00e9, humour grin\u00e7ant, tr\u00e8s accrocheur.",
+        "photo": "covers/_D8B0015.jpg",
+        "categories": [
+            3
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 7,
+    "fields": {
+        "titre": "Le fil de l'\u00e9p\u00e9e",
+        "auteur": "Charles de Gaulle",
+        "prix": "7.00",
+        "quantite": 10,
+        "description": "Publi\u00e9 en juillet 1932, Le fil de l'\u00e9p\u00e9e est le premier livre d'envergure publi\u00e9 par le commandant Charles de Gaulle. Oeuvre habit\u00e9, anticonformiste, politique et litt\u00e9raire, elle est aussi \"matrice d'un destin\". On y d\u00e9couvre les lignes de force d'une pens\u00e9e d\u00e9j\u00e0 tourn\u00e9e vers l'action, hant\u00e9e par la grandeur et la passion de la France.",
+        "photo": "covers/_D8B0014.jpg",
+        "categories": [
+            8
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 8,
+    "fields": {
+        "titre": "Les fins de parties",
+        "auteur": "Michel Drouilly",
+        "prix": "10.00",
+        "quantite": 1,
+        "description": "Les fins de parties sont souvent le point faible des joueurs pourtant d\u00e9j\u00e0 exp\u00e9riment\u00e9s. Aussi Michel Drouilly, avec son talent de p\u00e9dagogue, sont style clair et pr\u00e9cis, s'est-il attach\u00e9, dans ce volume, \u00e0 d\u00e9monter le m\u00e9canisme de ces fins de parties.",
+        "photo": "covers/_D8B0013.jpg",
+        "categories": [
+            9
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 9,
+    "fields": {
+        "titre": "A coeur ouvert",
+        "auteur": "B. Alan Wallace",
+        "prix": "15.00",
+        "quantite": 1,
+        "description": "\"A coeur ouvert\" entre-tisse avec habilet\u00e9 les enseignements sur les quatre Pens\u00e9es Infinies et les instructions sur les pratiques de la m\u00e9ditation du calme mental.",
+        "photo": "covers/_D8B0012.jpg",
+        "categories": [
+            10,
+            14
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 10,
+    "fields": {
+        "titre": "Tramp",
+        "auteur": "Kraehn & Jusseaume",
+        "prix": "20.00",
+        "quantite": 1,
+        "description": "1950. Yann Calec, jeune capitaine du \"Belle H\u00e9l\u00e8ne\", est bien malgr\u00e9 lui au coeur d'une escroquerie \u00e0 l'assurance mont\u00e9e par son armateur. Ayant d\u00e9couvert la v\u00e9rit\u00e9, il est alors pi\u00e9g\u00e9 par un agent complice de la compagnie, condamn\u00e9 et exp\u00e9di\u00e9 dans un bagne de Colombie. Avant de pouvoir sauver \"son\" cargo, il devrai sauver sa peau. Un fantastique thriller maritime sur fond de baraterie dont cette \u00e9dition int\u00e9grale r\u00e9unit les quatre albums du premier cycle.",
+        "photo": "covers/_D8B0006.jpg",
+        "categories": [
+            3
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 11,
+    "fields": {
+        "titre": "Au temps du Botchan, vol. 1",
+        "auteur": "Natsuo Sekikawa, Jiro Taniguchi",
+        "prix": "15.00",
+        "quantite": 1,
+        "description": "Japon 1905.  An 37 de l'\u00e8re Meiji. Natsume Soseki, l'un des plus grands \u00e9crivains japonais modernes, se coupe les ongles au soleil de la v\u00e9randa de sa maison bucolique, pendant qu'un petit chaton noir se prom\u00e8ne entre ses jambes. [...] \"Au temps du Botchan\" est une gigantesque fresque romanesque qui couvre pr\u00e8s de 1500 pages. \r\n\r\nSouvent compar\u00e9 au cin\u00e9aste Ozu, Jiro Taniguchi est consid\u00e9r\u00e9 comme l'un des p\u00e8res de la manga d'auteur. Unanimement reconnu au Japon, \"Au temps du Botchan\" est son oeuvre la plus importante. Avec le romancier Natsuo Sekikawa, ils ont cr\u00e9\u00e9 la premi\u00e8re manga litt\u00e9raire de l'histoire de la bande dessin\u00e9e.",
+        "photo": "covers/_D8B0011.jpg",
+        "categories": [
+            3
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 12,
+    "fields": {
+        "titre": "Comptabilit\u00e9",
+        "auteur": "Robert Grosjean",
+        "prix": "20.00",
+        "quantite": 1,
+        "description": "Manuel de comptabilit\u00e9",
+        "photo": "covers/_D8B0010.jpg",
+        "categories": [
+            11
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 13,
+    "fields": {
+        "titre": "Votre sant\u00e9 sans risque",
+        "auteur": "Dr Fr\u00e9d\u00e9ric Saldmann",
+        "prix": "19.50",
+        "quantite": 1,
+        "description": "Dans ce livre, je vous propose un rendez-vous intime avec vous-m\u00eame et de nouveaux secrets pour avoir une sant\u00e9 de fer. [...]",
+        "photo": "covers/_D8B0009.jpg",
+        "categories": [
+            12
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 14,
+    "fields": {
+        "titre": "Two Scoops of Django, Best practices for Django 1.8",
+        "auteur": "Daniel & Audrey Greenfeld",
+        "prix": "30.00",
+        "quantite": 1,
+        "description": "Djano is a high-level Python web framework that encourages hte rapide development of maintainable applications.\r\n\r\nTwo Scoops of Django introduces you to various tips, tricks, patterns, code snippets, and techniques that Daniel and Audrey Roy Greenfeld have picked up over the years.",
+        "photo": "covers/_D8B0007.jpg",
+        "categories": [
+            13
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 15,
+    "fields": {
+        "titre": "Love 2.0",
+        "auteur": "Barbara Fredrickson",
+        "prix": "15.90",
+        "quantite": 1,
+        "description": "Apprenez \u00e0 multiplier les micro-moments d'amour et d\u00e9couvrez le secret d'une vie heureuse!\r\n\r\nL'amour: un grand sentiment dramatique, qui appara\u00eet une fois dans notre vie, pour le meilleur ou pour le pire? Oublions tout cela!\r\n\r\nS'appuyant sur la recherche en neuropsychologie et sur la m\u00e9ditation de la bienveillance bouddhiste, Barbara Fredrickson nous ouvre les yeux sur le pouvoir de tous es petits moments d'amour et d'empathie auxquels nous ne pr\u00eatons pas assez attention [...]\r\n\r\nPr\u00e9face de Matthieu Ricard.",
+        "photo": "covers/_D8B0008.jpg",
+        "categories": [
+            5,
+            14
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 16,
+    "fields": {
+        "titre": "Test-Driven Development By Example",
+        "auteur": "Kent Beck",
+        "prix": "40.00",
+        "quantite": 1,
+        "description": "Clean code that works---now. This is the seeming contradiction that lies behind much of the pain of programming. Test-driven development replies to this contradiction with a paradox---test the program before you write it.",
+        "photo": "",
+        "categories": [
+            13
+        ]
+    }
+}
+]

@@ -1,0 +1,119 @@
+[
+{
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+        "nom": "Fiction",
+        "slug": "fiction",
+        "description": "Cat\u00e9gorie g\u00e9n\u00e9rale pour toute oeuvre de fiction (roman, bd)."
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+        "nom": "Roman",
+        "slug": "roman",
+        "description": "roman"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+        "nom": "BD",
+        "slug": "BD",
+        "description": "Bande dessin\u00e9e"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 5,
+    "fields": {
+        "nom": "psychologie",
+        "slug": "psychologie",
+        "description": "psychologie, pas philo"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 6,
+    "fields": {
+        "nom": "nature",
+        "slug": "nature",
+        "description": "nature, botanique"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 7,
+    "fields": {
+        "nom": "philosophie",
+        "slug": "philosophie",
+        "description": "philosophie"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 8,
+    "fields": {
+        "nom": "histoire",
+        "slug": "histoire",
+        "description": "histoire"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 9,
+    "fields": {
+        "nom": "jeux",
+        "slug": "jeux",
+        "description": "\u00e9checs, jeux de carte, go"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 10,
+    "fields": {
+        "nom": "spiritualit\u00e9s",
+        "slug": "spiritualites",
+        "description": "bouddhisme"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 11,
+    "fields": {
+        "nom": "commercial",
+        "slug": "commercial",
+        "description": "commercial, comptabilit\u00e9"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 12,
+    "fields": {
+        "nom": "sant\u00e9",
+        "slug": "sante",
+        "description": "sant\u00e9, nutrition, bien-\u00eatre"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 13,
+    "fields": {
+        "nom": "informatique",
+        "slug": "informatique",
+        "description": "informatique, web"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 14,
+    "fields": {
+        "nom": "bouddhisme",
+        "slug": "bouddhisme",
+        "description": "bouddhisme"
+    }
+}
+]

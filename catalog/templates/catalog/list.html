@@ -1,0 +1,33 @@
+{% extends "inventex.html" %}
+{% load static %}
+{% load thumbnails %}
+{% block content %}
+<h1>Nos livres</h1>
+<div class="container">
+    <div class="row">
+        {% for book in books %}
+        <div class="col-lg-3 col-sm-6 col-xs-12">
+          {% if book.photo %}
+            {% get_thumbnail book.photo.path  "160x260" crop="top" as thumbnail %}
+          {% endif %}
+            <div class="media">
+                <div class="media-top">
+                    <a href="{% url "catalog:detail" book.pk %}" alt="photo">
+                    {% if book.photo %}
+                    <img src="{{ thumbnail.url }}" alt="The thumbnail" style="width: {{ thumbnail.width }}">
+                    {% else %}
+                    <img src="{% static '/images/no-image.jpg' %}" alt="The thumbnail" >
+                    {% endif %}
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">
+                        <a href="{% url "catalog:detail" book.pk %}"><em>{{ book.titre }}</em></a> </h4>
+                    <p>par {{book.auteur}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

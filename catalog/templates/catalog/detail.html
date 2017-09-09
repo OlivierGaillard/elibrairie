@@ -1,0 +1,58 @@
+{% extends "inventex.html" %}
+{% load static %}
+{% load thumbnails %}
+{% block content %}
+<h2><em>{{ book.titre }}</em></h2>
+<h3>de {{ book.auteur }}</h3>
+<h4>Catégories: {% for cat in book.categories.all %}
+    {{cat.nom}}
+    {% endfor %}
+</h4>
+<h4>Description</h4>
+
+<quote class="flush-right">{{ book.description }}</quote>
+
+{% if book.photo %}
+<p>
+<div class="pic_container">
+<div class="pic">
+    {% get_thumbnail book.photo.path  "360x460" crop="center" as thumbnail %}
+    <p>
+
+        <a title="Cliquez pour voir la couverture en entier" href="{{ book.photo.url }}" alt="photo">
+        <img src="{{ thumbnail.url }}" alt="The thumbnail" style="width: {{ thumbnail.width }}">
+        </a>
+    </p>
+</div>
+</div>
+</p>
+{% else %}
+           <p><img src="{% static '/images/no-image.jpg' %}" alt="The thumbnail" > </p>
+
+{% endif %}
+
+<table class="table-condensed">
+    <tr>
+        <td>
+    <form method="POST" action="{% url "cart:add_item" book.pk  %}">
+       {% csrf_token %}
+       <input type="submit" class="btn btn-primary" value="Ajouter au panier"/>
+    </form>
+        </td>
+
+    {% if book_in_cart %}
+    <td>
+    <form method="POST" action="{% url "cart:remove_item" book.pk  %}">
+       {% csrf_token %}
+       <input type="submit" class="btn btn-warning" value="Supprimer du panier"/>
+    </form>
+
+    </td>
+    {% endif %}
+
+    </tr>
+
+</table>
+
+
+{% endblock %}

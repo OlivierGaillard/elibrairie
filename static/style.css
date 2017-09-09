@@ -1,0 +1,46 @@
+@font-face {
+	font-family: 'learning-curve-regular';
+	src: url('polices/learning_curve_regular_ot_tt.ttf') format('truetype');
+}
+
+body
+{
+    color: black;
+    /* box-shadow: 6px 6px 6px; */
+    /* text-decoration: underline; */
+    /* background-image: url('images/logindoor.jpg'); */
+    background-color: blanchedalmond;
+    opacity: 1.0;
+    margin: auto;
+}
+
+#livreavous {
+   font-family: 'Learning-curve-regular';
+   font-size: xx-large;
+   font-weight: bold;
+   color: orange;
+
+}
+
+#bienvenue {
+   text-align: left;
+   }
+
+.prototype {
+   padding-left: 12px;
+   margin-left: 20px;
+}
+
+.books_image {
+  float: left;
+  margin-right: 20px;
+  box-shadow: 3px 3px 3px black;
+}
+
+.lettrine_stop {
+  clear: both;
+  margin-top: 10px;
+  padding-top: 15px;
+}
+
+

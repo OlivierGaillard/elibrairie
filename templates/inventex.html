@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block header %}Livre à vous{% endblock %}
+{% block site_wrapper %}
+<div class="container-fluid">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar/brand" href="/"><h3 id="livreavous">Livre à vous</h3></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Parcourir la librairie<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url "catalog:listall" %}">Tous les livres <span class="badge">{{total_books}}</span></a></li>
+                        {% for cat in categories.all %}
+                             {% if cat.book_set.all %}
+                                 <li><a href="/catalog/listcat/{{cat.nom}}">{{cat.nom}}
+                                     <span class="badge">{{cat.book_set.all|length}}</span> </a>
+                                 </li>
+                             {% endif %}
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li><a title="Pour entrer des livres" href="/admin">Administration</a> </li>
+                <li><a title="Contenu du panier" href="{% url "cart:cart_content" %}"><span class="glyphicon glyphicon-shopping-cart"></span>
+                     <span  class="cart-items-count"><span class=" notification-counter">{{cart_counter}}</span></span>
+                    </a> </li>
+                <li><a title="à faire / fait" href="/todo/">Liste des travaux</a> </li>
+                <li><a title="notre adresse" href="/cart/checkout/">Contact</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+        {% block content %}
+
+        {% endblock %}
+    <footer>
+        <nav id="footernav">
+            {% block footernav %}{% endblock %}
+        </nav>
+    </footer>
+</div>
+{% endblock %}
