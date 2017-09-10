@@ -20,7 +20,7 @@
 {% if book.photo %}
 <p>
 <div class="pic_container">
-<div class="pic">
+    <div class="pic">
     {% get_thumbnail book.photo.path  "600x400" as thumbnail %}
     <p>
 
@@ -29,12 +29,13 @@
         </a>
     </p>
 
-</div>
-</p>
 {% else %}
            <p><img src="{% static '/images/no-image.jpg' %}" alt="The thumbnail" > </p>
 
 {% endif %}
+<p>Prix: {{book.prix}} EUR</p>
+
+</div>
 
 <table class="table-condensed">
     <tr>
