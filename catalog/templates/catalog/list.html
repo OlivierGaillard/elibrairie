@@ -8,7 +8,7 @@
         {% for book in books %}
         <div class="col-lg-3 col-sm-6 col-xs-12">
           {% if book.photo %}
-            {% get_thumbnail book.photo.path  "160x260" crop="top" as thumbnail %}
+            {% get_thumbnail book.photo.path  "300x200" as thumbnail %}
           {% endif %}
             <div class="media">
                 <div class="media-top">

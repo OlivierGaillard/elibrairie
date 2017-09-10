@@ -2,28 +2,33 @@
 {% load static %}
 {% load thumbnails %}
 {% block content %}
+
 <h2><em>{{ book.titre }}</em></h2>
 <h3>de {{ book.auteur }}</h3>
 <h4>Catégories: {% for cat in book.categories.all %}
     {{cat.nom}}
     {% endfor %}
 </h4>
-<h4>Description</h4>
 
-<quote class="flush-right">{{ book.description }}</quote>
+<div class="row">
+    <div class="col-lg-8 col-sm-6 col-md-6">
+        <h4>Description</h4>
 
+        <quote class="flush-right">{{ book.description }}</quote>
+    </div>
+</div>
 {% if book.photo %}
 <p>
 <div class="pic_container">
 <div class="pic">
-    {% get_thumbnail book.photo.path  "360x460" crop="center" as thumbnail %}
+    {% get_thumbnail book.photo.path  "600x400" as thumbnail %}
     <p>
 
         <a title="Cliquez pour voir la couverture en entier" href="{{ book.photo.url }}" alt="photo">
         <img src="{{ thumbnail.url }}" alt="The thumbnail" style="width: {{ thumbnail.width }}">
         </a>
     </p>
-</div>
+
 </div>
 </p>
 {% else %}
